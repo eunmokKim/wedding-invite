@@ -7,7 +7,7 @@ import img4 from '../../assets/images/gallery/ws04.jpg';
 import img5 from '../../assets/images/gallery/ws05.jpg';
 import img6 from '../../assets/images/gallery/ws06.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
+import 'swiper/swiper.css';
 
 const images = [img1, img2, img3, img4, img5, img6];
 
