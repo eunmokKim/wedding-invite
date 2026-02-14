@@ -3,7 +3,7 @@
 import Gallery from "./components/gallery/Gallery";
 import Greeting from "./components/greeting/Greeting";
 import Intro from "./components/intro/Intro";
-// import MapSection from "./components/map/MapSection";
+import MapSection from "./components/map/MapSection";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Intro />
       <Greeting />
       <Gallery />
-      {/* <MapSection /> */}
+      <MapSection />
       {/* <AccountSection /> */}
       {/* <Footer /> */}
     </div>
