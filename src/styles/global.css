@@ -125,3 +125,39 @@ body {
   color: #4b4440;
   margin-bottom: 30px;
 }
+
+/* 갤러리  */
+
+.gallery-section {
+  background: #f3f1f1;   /* Greeting과 동일 */
+  padding: 100px 28px;
+  text-align: center;
+}
+
+.gallery-header {
+  margin-bottom: 60px;
+}
+
+.gallery-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  letter-spacing: 0.4em;
+  color: #6e5f56;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.gallery-item {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
