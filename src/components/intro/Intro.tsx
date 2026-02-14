@@ -1,18 +1,19 @@
 import heroImage from '../../assets/images/gallery/main.jpg';
 
-
 export default function Intro() {
   return (
-    <section className="intro-hero"
-      style={{ backgroundImage: `url(${heroImage})` }}
-    >
-      <div className="intro-overlay">
-        <h1>
-          김은목 <span>❤️</span> 김혜진
-        </h1>
-        <p>2026년 6월 7일 일요일 오후 2시</p>
-        <p className="venue">잠실 아펠가모</p>
+    <div className="intro-wrapper">
+      <div className="intro-title">
+        Love begins here
       </div>
-    </section>
+
+      <section className="intro-hero" style={{ backgroundImage: `url(${heroImage})` }}>
+        <div className="intro-overlay">
+          <h1>은목 <span className="heart">♥</span> 혜진</h1>
+          <p className="date">2026.06.07 SUN PM 2:00</p>
+        </div>
+      </section>
+    </div>
+    
   );
 }

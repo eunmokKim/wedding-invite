@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="container">
       <Intro />
-      <Greeting />
+      {/* <Greeting />
       <CeremonyInfo />
       <MapSection />
       <Gallery />
       <AccountSection />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

@@ -1,214 +1,96 @@
-/* ===== Reset ===== */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  background: #faf9f7;
-  color: #222;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont,
-    'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  background: #ffffff;  /* 완전 흰색 */
+  color: #3a3a3a;
+  font-family: 'Pretendard', sans-serif;
   line-height: 1.7;
 }
 
-/* ===== Layout ===== */
 .container {
-  max-width: 420px;
+  max-width: 490px;
   margin: 0 auto;
   background: #ffffff;
+  padding: 0 16px;   /* 좌우 여백 */
 }
 
-/* ===== Section ===== */
-.section {
-  padding: 56px 24px;
-  text-align: center;
-}
-
-/* ===== Typography ===== */
-h1 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 32px;
-}
-
-p {
-  font-size: 15px;
-  margin: 8px 0;
-  word-break: keep-all;
-}
-
-/* ===== Intro Hero ===== */
+/* ===== Intro ===== */
 .intro-hero {
-  height: 100vh;
+  width: 100%;
+  aspect-ratio: 800 / 1450;
+
+  margin: 30px 0;              /* 위아래 공간 */
+  border-radius: 18px;         /* 둥근 카드 느낌 */
+  overflow: hidden;            /* 둥근 모서리 적용 위해 필요 */
+
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
 
   display: flex;
   align-items: flex-end;
   justify-content: center;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.intro-wrapper {
+  background: #eae5df;  /* 연한 베이지 */
+  padding: 40px 20px;  /* 위아래 공간 */
+}
+
+.intro-title {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-style: italic;
+  color: #6e5f56;
+
+  margin-bottom: 28px;
 }
 
 .intro-overlay {
   width: 100%;
-  padding: 48px 24px 64px;
+  padding: 50px 30px;
+  text-align: center;
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0)
+    rgba(246, 242, 235, 0.95),
+    rgba(246, 242, 235, 0.7),
+    rgba(246, 242, 235, 0)
   );
-  text-align: center;
 }
 
-.intro-overlay h1 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.intro-overlay h1 span {
-  margin: 0 6px;
-}
-
-.intro-overlay p {
-  font-size: 14px;
-  color: #444;
-  margin: 4px 0;
-}
-
-.intro-overlay .venue {
-  margin-top: 8px;
-  font-weight: 500;
-}
-
-
-/* ===== Buttons ===== */
-button {
-  padding: 12px 16px;
-  border-radius: 8px;
-  border: none;
-  background: #f2e8dc;
-  color: #333;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-button + button {
-  margin-top: 12px;
-}
-
-/* ===== Links ===== */
-a {
-  color: #2f6fe4;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* ===== Account ===== */
-.account-item {
-  margin-top: 24px;
-}
-
-/* ===== Gallery ===== */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-
-.account-item p {
-  margin: 4px 0;
-  font-size: 14px;
-}
-
-/* ===== Gallery Swiper ===== */
-.gallery-swiper {
-  padding: 20px 0 40px;
-}
-
-.gallery-slide {
-  width: 70%;
-  transition: transform 0.3s ease;
-}
-
-.gallery-slide img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  aspect-ratio: 3 / 4;
-}
-
-/* 가운데 슬라이드 강조 */
-.swiper-slide-active {
-  transform: scale(1);
-}
-
-.swiper-slide-prev,
-.swiper-slide-next {
-  transform: scale(0.9);
-}
-
-
-/* ===== Footer ===== */
-footer {
-  padding: 48px 0;
-  text-align: center;
-  background: #faf9f7;
-  font-size: 12px;
-  color: #777;
-}
-
-
-/* ===== Title / Names ===== */
-h1,
 .intro-overlay h1 {
   font-family: 'Noto Serif KR', serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-
-/* ===== Section Titles ===== */
-h2 {
-  font-family: 'Noto Serif KR', serif;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-/* ===== Body Text ===== */
-p,
-button,
-a {
-  font-family: 'Pretendard', sans-serif;
-  font-weight: 400;
-}
-
-.intro-overlay h1 {
   font-size: 28px;
+  font-weight: 500;
   margin-bottom: 16px;
 }
 
-.intro-overlay h1 span {
+.intro-overlay .date {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
-  vertical-align: middle;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
 }
 
-.serif-en {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.02em;
+.intro-overlay .venue {
+  font-size: 14px;
+  color: #6f6a63;
+}
+
+.heart {
+  display: inline-block;
+  color: #e85c5c;
+  margin: 0 6px;
+
+  animation: heartbeat 1.2s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.2); }
+  40%  { transform: scale(1); }
+  60%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
