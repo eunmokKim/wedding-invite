@@ -1,25 +1,23 @@
-import Section from '../layout/Section';
-
 export default function Greeting() {
   return (
-    <Section title="초대합니다">
-      <p>
-        서로의 하루가 되어
-        <br />
-        같은 길을 걷고자 합니다.
-      </p>
-
-      <p style={{ marginTop: '24px' }}>
-        소중한 분들을 모시고
-        <br />
-        결혼식을 올리고자 하오니
-        <br />
-        자리를 빛내주시길 바랍니다.
-      </p>
-
-      <p style={{ marginTop: '32px', fontWeight: 500 }}>
-        신랑 김OO · 신부 이OO
-      </p>
-    </Section>
+    <div className='greeting-section'>
+      <div className="invitation-header">
+        <div className="mini-heart">♥</div>
+        <div className="invitation-title">INVITATION</div>
+      </div>
+      <div className="greeting-content">
+        <p>
+          소중한 내 사람과 부부라는 이름으로
+          <br />
+          따뜻한 가정을 이루게 되었습니다.
+          <br />
+          바쁘시더라도 빛나는 날
+          <br />
+          시작하는 저희의 앞날을 축복해 주시면 
+          <br />
+          더없는 기쁨이 되겠습니다.
+        </p>
+      </div>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 490px;
+  max-width: 520px;
   margin: 0 auto;
   background: #ffffff;
   padding: 0 16px;   /* 좌우 여백 */
@@ -93,4 +93,35 @@ body {
   40%  { transform: scale(1); }
   60%  { transform: scale(1.15); }
   100% { transform: scale(1); }
+}
+
+.greeting-section {
+  background: #e9e3d9;   /* 연한 베이지 */
+  padding: 80px 28px;
+  text-align: center;
+}
+
+.invitation-header {
+  margin-bottom: 50px;
+}
+
+.mini-heart {
+  font-size: 16px;
+  color: #6e5f56;
+  margin-bottom: 14px;
+}
+
+.invitation-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  color: #6e5f56;
+}
+
+.greeting-content p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 2;
+  color: #4b4440;
+  margin-bottom: 30px;
 }
