@@ -59,7 +59,7 @@ export default function Gallery() {
             <button onClick={close}>
               <X size={24} />
             </button>
-          </div>
+          </div>  
 
           <button className="modal-left" onClick={prev}>
             <ChevronLeft size={32} />

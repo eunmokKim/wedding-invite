@@ -35,7 +35,7 @@ body {
 
 .intro-wrapper {
   background: #eae5df;  /* 연한 베이지 */
-  padding: 40px 20px;  /* 위아래 공간 */
+  padding: 80px 20px;  /* 위아래 공간 */
 }
 
 .intro-title {
@@ -132,7 +132,7 @@ body {
 
 .gallery-section {
   background: #f3f1f1;   /* Greeting과 동일 */
-  padding: 100px 28px;
+  padding: 80px 28px;
   text-align: center;
 }
 
@@ -239,7 +239,7 @@ body {
 /* 맵 */
 .location-section {
   background: #f7f5f2;
-  padding: 100px 28px;
+  padding: 80px 28px;
   text-align: center;
 }
 
@@ -339,7 +339,7 @@ body {
 
 .account-section {
   background: #f6f1ea;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
