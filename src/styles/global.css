@@ -164,6 +164,78 @@ body {
   object-fit: cover;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+/* 🔥 모달 */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 85%;
+  object-fit: contain;
+}
+
+.modal-top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+}
+
+.modal-top button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-left,
+.modal-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-left {
+  left: 20px;
+}
+
+.modal-right {
+  right: 20px;
+}
+
+
 /* 맵 */
 .location-section {
   background: #f7f5f2;
@@ -300,13 +372,12 @@ body {
 }
 
 .toggle-btn {
-  background: transparent;
-  border: 1px solid #d6d2cd;
   padding: 6px 14px;
+  border: 1px solid #cfc7bd;
   border-radius: 20px;
-  font-size: 12px;
+  background: white;
+  font-size: 14px;
   cursor: pointer;
-  transition: 0.2s ease;
 }
 
 .toggle-btn:hover {
@@ -328,12 +399,16 @@ body {
   text-align: left;
 }
 
+.family-card-header {
+  display: flex;
+  align-items: center;       /* 세로 중앙 정렬 */
+  justify-content: space-between; /* 좌우 끝 배치 */
+}
+
 .family-title {
-  
+  font-size: 18px;
   font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 16px;
-  color: #8d7f73;
+  color: #9c8b7b;
 }
 
 .account-row {
