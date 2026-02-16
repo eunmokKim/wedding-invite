@@ -1,9 +1,9 @@
-// import AccountSection from "./components/account/AccountSection";
-// import Footer from "./components/footer/Footer";
+import Account from "./components/account/Account";
+import Footer from "./components/footer/Footer";
 import Gallery from "./components/gallery/Gallery";
 import Greeting from "./components/greeting/Greeting";
 import Intro from "./components/intro/Intro";
-import MapSection from "./components/map/MapSection";
+import Location from "./components/map/Location";
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <Intro />
       <Greeting />
       <Gallery />
-      <MapSection />
-      {/* <AccountSection /> */}
-      {/* <Footer /> */}
+      <Location />
+      <Account />
+      <Footer />
     </div>
   );
 }

@@ -61,11 +61,13 @@ body {
 }
 
 .intro-overlay h1 {
-  font-family: 'Noto Serif KR', serif;
-  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
   font-weight: 500;
+  letter-spacing: 0.05em;
   margin-bottom: 16px;
 }
+
 
 .intro-overlay .date {
   font-family: 'Cormorant Garamond', serif;
@@ -209,6 +211,32 @@ body {
   font-size: 14px;
 }
 
+.location-address-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.location-address-row p {
+  margin: 0;
+}
+
+.address-copy-btn {
+  background: none;
+  border: 1px solid #d7d2cc;
+  border-radius: 6px;
+  padding: 4px 6px;
+  cursor: pointer;
+  color: #7a6f66;
+  transition: all 0.2s ease;
+}
+
+.address-copy-btn:hover {
+  background: #eee9e3;
+}
+
 .map-image {
   margin-bottom: 30px;
 }
@@ -228,4 +256,174 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: #6e5f56;
+}
+
+.static-map {
+  width: 100%;
+  border-radius: 14px;
+  margin-top: 30px;
+}
+/* ===== Account ===== */
+
+.account-section {
+  background: #f6f1ea;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.account-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.account-toggle button {
+  background: transparent;
+  border: 1px solid #cfc6bb;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.account-toggle button:hover {
+  background: #ddd5cc;
+}
+
+.family-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: 1px solid #d6d2cd;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: #f2f0ed;
+}
+
+.family-account-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.family-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.family-title {
+  
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #8d7f73;
+}
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #f0ece7;
+}
+
+.account-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-row:first-of-type {
+  border-top: none;
+}
+
+.account-role {
+  font-size: 13px;
+  color: #999;
+}
+
+.account-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.account-number {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-btn {
+  border: none;
+  background: #f3efea;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #e0d8cf;
+}
+
+/* ===== Footer ===== */
+
+.footer-bar {
+  background: #6e6a66;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bar button {
+  background: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.2s ease;
+}
+
+.footer-bar button:hover {
+  opacity: 1;
+}
+
+.footer-content {
+  background: #f5f2ee;
+  padding: 14px 0;
+  text-align: center;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #7a6f66;
+}
+
+.footer-content p {
+  margin: 0;
 }
