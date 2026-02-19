@@ -1,5 +1,6 @@
 import { MapPin, Phone, Copy } from "lucide-react";
 import { useEffect } from "react";
+import FadeIn from "../FadeIn";
 
 declare global {
   interface Window {
@@ -19,70 +20,79 @@ export default function Location() {
   useEffect(() => {
     if (!window.kakao) return;
 
-    const container = document.getElementById("staticMap");
+    const container = document.getElementById("map");
     if (!container) return;
 
-    const position = new window.kakao.maps.LatLng(
+    const kakao = window.kakao;
+
+    const position = new kakao.maps.LatLng(
       37.5159272595028,
       127.099643159822
     );
 
     const options = {
       center: position,
-      level: 4,
-      marker: {
-        position: position,
-      },
+      level: 4, // 숫자 낮을수록 확대
     };
 
-    new window.kakao.maps.StaticMap(container, options);
+    const map = new kakao.maps.Map(container, options);
+
+    // 마커 생성
+    const marker = new kakao.maps.Marker({
+      position: position,
+    });
+
+    marker.setMap(map);
+
   }, []);
 
   return (
     <div className="location-section">
-      <div className="location-header">
-        <div className="location-title">LOCATION</div>
-      </div>
-
-      <div className="location-info">
-        <h3>잠실 아펠가모 2층 단독홀</h3>
-
-        <div className="location-address-row">
-          <p>{address}</p>
-          <button onClick={copyAddress} className="address-copy-btn">
-            <Copy size={14} strokeWidth={1.5} />
-          </button>
+      <FadeIn>
+        <div className="location-header">
+          <div className="location-title">LOCATION</div>
         </div>
 
-        <p>02-2144-0230</p>
-      </div>
+        <div className="location-info">
+          <h3>잠실 아펠가모 2층 단독홀</h3>
 
-      <div className="location-buttons">
-        <a
-          href="https://map.kakao.com/link/map/잠실아펠가모,37.5159272595028,127.099643159822"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <MapPin size={16} strokeWidth={1.5} />
-          지도
-        </a>
+          <div className="location-address-row">
+            <p>{address}</p>
+            <button onClick={copyAddress} className="address-copy-btn">
+              <Copy size={14} strokeWidth={1.5} />
+            </button>
+          </div>
 
-        <a href="tel:0221440230">
-          <Phone size={16} strokeWidth={1.5} />
-          전화
-        </a>
-      </div>
+          <p>02-2144-0230</p>
+        </div>
 
-      <div
-        id="staticMap"
-        style={{
-          width: "100%",
-          height: "300px",
-          marginTop: "30px",
-          borderRadius: "14px",
-          overflow: "hidden",
-        }}
-      ></div>
+        <div className="location-buttons">
+          <a
+            href="https://map.kakao.com/link/map/잠실아펠가모,37.5159272595028,127.099643159822"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MapPin size={16} strokeWidth={1.5} />
+            지도
+          </a>
+
+          <a href="tel:0221440230">
+            <Phone size={16} strokeWidth={1.5} />
+            전화
+          </a>
+        </div>
+
+        <div
+          id="map"
+          style={{
+            width: "100%",
+            height: "350px",
+            marginTop: "30px",
+            borderRadius: "16px",
+            overflow: "hidden",
+          }}
+        ></div>
+      </FadeIn>
     </div>
   );
 }

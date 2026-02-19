@@ -89,6 +89,48 @@ body {
   animation: heartbeat 1.2s infinite ease-in-out;
 }
 
+.music-player {
+  margin-top: 40px;
+  padding: 30px 20px;
+  text-align: center;
+  background: #e8e1dc;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #cfc7c2;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #7a6b64;
+  transition: width 0.2s ease;
+}
+
+.music-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  color: #6f615a;
+}
+
+.play-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #6f615a;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
 @keyframes heartbeat {
   0%   { transform: scale(1); }
   25%  { transform: scale(1.2); }
@@ -368,7 +410,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
 }
 
 .toggle-btn {
@@ -502,3 +543,76 @@ body {
 .footer-content p {
   margin: 0;
 }
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.guestbook-section {
+  background: #f5f2ee;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.guestbook-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  margin-bottom: 40px;
+  color: #8b6f61;
+}
+
+.guestbook-form {
+  max-width: 420px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-family: 'Noto Serif KR', serif;
+}
+
+.guestbook-form textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+.guestbook-form button {
+  padding: 12px;
+  border-radius: 24px;
+  border: none;
+  background: #8b6f61;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.guestbook-item {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.guestbook-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+
+

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FadeIn from "../FadeIn";
 
 interface PersonAccount {
   role: string;
@@ -47,53 +48,54 @@ export default function AccountSection() {
 
   return (
     <div className="account-section">
+      <FadeIn>
+        <div className="account-title">마음 전하실 곳</div>
 
-      <div className="account-title">마음 전하실 곳</div>
+        <div className="family-account-list">
+          {familyAccounts.map((family, i) => (
+            <div className="family-card" key={i}>
 
-      <div className="family-account-list">
-        {familyAccounts.map((family, i) => (
-          <div className="family-card" key={i}>
-
-            {/* 🔹 상단 타이틀 + 버튼 */}
-            <div className="family-header">
-              <div className="family-title">{family.side}</div>
-              <button
-                className="toggle-btn"
-                onClick={() => toggleSide(family.side)}
-              >
-                {openSide === family.side ? "닫기" : "계좌번호 보기"}
-              </button>
-            </div>
-
-            {/* 🔹 해당 side만 열림 */}
-            {openSide === family.side && (
-              <div className="account-list">
-                {family.accounts.map((person, idx) => (
-                  <div className="account-row" key={idx}>
-                    <div className="account-left">
-                      <div className="account-role">{person.role}</div>
-                      <div className="account-name">{person.name}</div>
-                    </div>
-
-                    <div className="account-right">
-                      <span className="account-number">
-                        {person.bank} {person.number}
-                      </span>
-                      <button
-                        className="copy-btn"
-                        onClick={() => copy(person.number)}
-                      >
-                        복사
-                      </button>
-                    </div>
-                  </div>
-                ))}
+              {/* 🔹 상단 타이틀 + 버튼 */}
+              <div className="family-header">
+                <div className="family-title">{family.side}</div>
+                <button
+                  className="toggle-btn"
+                  onClick={() => toggleSide(family.side)}
+                >
+                  {openSide === family.side ? "닫기" : "계좌번호 보기"}
+                </button>
               </div>
-            )}
 
-          </div>
-        ))}
-      </div>
+              {/* 🔹 해당 side만 열림 */}
+              {openSide === family.side && (
+                <div className="account-list">
+                  {family.accounts.map((person, idx) => (
+                    <div className="account-row" key={idx}>
+                      <div className="account-left">
+                        <div className="account-role">{person.role}</div>
+                        <div className="account-name">{person.name}</div>
+                      </div>
+
+                      <div className="account-right">
+                        <span className="account-number">
+                          {person.bank} {person.number}
+                        </span>
+                        <button
+                          className="copy-btn"
+                          onClick={() => copy(person.number)}
+                        >
+                          복사
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+            </div>
+          ))}
+        </div>
+      </FadeIn>
     </div>
   );
 }
