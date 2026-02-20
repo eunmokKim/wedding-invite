@@ -1,4 +1,5 @@
 import Account from "./components/account/Account";
+import WeddingDay from "./components/day/WeddingDay";
 import Footer from "./components/footer/Footer";
 import Gallery from "./components/gallery/Gallery";
 import Greeting from "./components/greeting/Greeting";
@@ -11,6 +12,7 @@ function App() {
     <div className="container">
       <Intro />
       <Greeting />
+      <WeddingDay />
       <Gallery />
       <Location />
       <Account />

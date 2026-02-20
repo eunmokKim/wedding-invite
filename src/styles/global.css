@@ -59,21 +59,26 @@ body {
     rgba(246, 242, 235, 0)
   );
 }
-
 .intro-overlay h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 38px;
+  font-weight: 600;
   letter-spacing: 0.05em;
-  margin-bottom: 16px;
+  color: #3f3a37;
 }
 
+.intro-overlay .heart {
+  color: #e26666;
+  margin: 0 10px;
+  font-size: 34px;
+}
 
 .intro-overlay .date {
   font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
-  letter-spacing: 0.05em;
-  margin-bottom: 8px;
+  letter-spacing: 0.25em;
+  margin-top: 18px;
+  color: #6f615a;
 }
 
 .intro-overlay .venue {
@@ -614,5 +619,75 @@ body {
   margin-bottom: 6px;
 }
 
+.wedding-section {
+  background: #f5f2ee;
+  padding: 80px 24px;
+  text-align: center;
+}
 
+.wedding-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+
+.wedding-date {
+  margin-bottom: 40px;
+  color: #7b6d60;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.calendar-header {
+  font-weight: 600;
+  color: #8b6f61;
+}
+
+.calendar-cell {
+  padding: 12px;
+  border-radius: 50%;
+  min-height: 40px;
+}
+
+.wedding-day {
+  background: #8b6f61;
+  color: white;
+  font-weight: 600;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.count-card {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  min-width: 80px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.count-card div {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.count-card span {
+  font-size: 12px;
+  color: #999;
+}
+
+.wedding-message {
+  margin-top: 10px;
+  color: #7b6d60;
+}
 
