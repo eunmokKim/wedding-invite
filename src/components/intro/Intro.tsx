@@ -45,24 +45,18 @@ export default function Intro() {
 
   return (
     <div className="intro-wrapper">
+      {/* 🔥 작은 플레이 버튼 */}
+        <button className="floating-play-btn" onClick={togglePlay}>
+          {playing ? <Pause size={16} /> : <Play size={16} />}
+        </button>
       <div className="intro-title">
         Love begins here
       </div>
 
-      <section
-        className="intro-hero"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="intro-overlay">
-          <h1>
-            은목 <span className="heart">♥</span> 혜진
-          </h1>
-          <p className="date">2026.06.07 SUN <br/>PM 2:00</p>
-        </div>
+      <section className="intro-hero" style={{ backgroundImage: `url(${heroImage})` }}>
       </section>
 
       {/* 🎵 음악 영역 */}
-      <div className="music-player">
         <audio
           ref={audioRef}
           src={bgm}
@@ -70,21 +64,6 @@ export default function Intro() {
           preload="auto"
           loop
         />
-
-        <div className="progress-bar">
-          <div
-            className="progress-fill"
-            style={{ width: `${progress}%` }}
-          />
-        </div>
-
-        <div className="music-controls">
-
-          <button className="play-btn" onClick={togglePlay}>
-            {playing ? <Pause size={28} /> : <Play size={28} />}
-          </button>
-        </div>
-      </div>
     </div>
   );
 }

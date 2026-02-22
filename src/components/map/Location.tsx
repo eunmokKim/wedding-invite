@@ -57,7 +57,7 @@ export default function Location() {
         </div>
 
         <div className="location-info">
-          <h3>잠실 아펠가모 2층 단독홀</h3>
+          <h4>잠실 아펠가모 2층 단독홀</h4>
 
           <div className="location-address-row">
             <p>{address}</p>
@@ -95,6 +95,34 @@ export default function Location() {
             overflow: "hidden",
           }}
         ></div>
+        {/* 🔥 교통 안내 영역 */}
+        <div className="transport-section">
+          <div className="transport-block">
+            <h4>지하철</h4>
+            <p><span style={{color: "#008000"}}>●</span> 2호선 잠실역 7번 출구</p>
+            <p><span style={{color: "#ff69b4"}}>●</span> 8호선 잠실역 7번 출구</p>
+            <p className="transport-sub">
+              · 직진 방향 224M 우측 방향 100M 도보 후 우측 건물
+            </p>
+          </div>
+          <hr/>
+          <div className="transport-block">
+            <h4>주차</h4>
+
+            <p>
+              <span className="parking-dot">●</span>
+              건물 내 지하 주차장 무료 이용 가능
+            </p>
+
+            <p className="transport-sub">
+              · 2시간 무료 주차 지원
+            </p>
+
+            <p className="transport-sub">
+              · 주차장 입구가 매우 협소하오니 천천히 진입해 주세요.
+            </p>
+          </div>
+        </div>
       </FadeIn>
       {toastMessage && (
         <Toast

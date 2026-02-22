@@ -17,6 +17,7 @@ body {
 .intro-hero {
   width: 100%;
   aspect-ratio: 800 / 1450;
+  position: relative;  /* 🔥 필수 */
 
   margin: 30px 0;              /* 위아래 공간 */
   border-radius: 18px;         /* 둥근 카드 느낌 */
@@ -59,31 +60,32 @@ body {
     rgba(246, 242, 235, 0)
   );
 }
-.intro-overlay h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 38px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #3f3a37;
+
+.floating-play-btn {
+  position: absolute;
+  top: 20px;      /* 🔥 위로 */
+  right: 30px;    /* 오른쪽 유지 */
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(196, 193, 193, 0.55);
+  backdrop-filter: blur(6px);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.intro-overlay .heart {
-  color: #e26666;
-  margin: 0 10px;
-  font-size: 34px;
-}
-
-.intro-overlay .date {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  letter-spacing: 0.25em;
-  margin-top: 18px;
-  color: #6f615a;
-}
-
-.intro-overlay .venue {
-  font-size: 14px;
-  color: #6f6a63;
+.floating-play-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+  transform: scale(1.08);
 }
 
 .heart {
@@ -98,7 +100,6 @@ body {
   margin-top: 40px;
   padding: 30px 20px;
   text-align: center;
-  background: #e8e1dc;
 }
 
 .progress-bar {
@@ -145,19 +146,13 @@ body {
 }
 
 .greeting-section {
-  background: #e9e3d9;   /* 연한 베이지 */
+  background: #ffffff;   /* 연한 베이지 */
   padding: 80px 28px;
   text-align: center;
 }
 
 .invitation-header {
   margin-bottom: 50px;
-}
-
-.mini-heart {
-  font-size: 16px;
-  color: #6e5f56;
-  margin-bottom: 14px;
 }
 
 .invitation-title {
@@ -169,16 +164,32 @@ body {
 
 .greeting-content p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 2;
   color: #4b4440;
   margin-bottom: 30px;
 }
 
+.family-info {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.family-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #5c5550;
+}
+
+.family-info strong {
+  font-weight: 600;
+  color: #3f3a37;
+}
+
 /* 갤러리  */
 
 .gallery-section {
-  background: #f3f1f1;   /* Greeting과 동일 */
+  background: #ffffff;   /* Greeting과 동일 */
   padding: 80px 28px;
   text-align: center;
 }
@@ -189,8 +200,8 @@ body {
 
 .gallery-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  letter-spacing: 0.4em;
+  font-size: 18px;
+  letter-spacing: 0.3em;
   color: #6e5f56;
 }
 
@@ -296,9 +307,9 @@ body {
 
 .location-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-  letter-spacing: 0.4em;
-  color: #9d7f7f;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  color: #6e5f56;
 }
 
 .location-info h3 {
@@ -341,6 +352,69 @@ body {
 .location-address-row p {
   margin: 0;
   white-space: pre-line;  /* 줄바꿈 유지 */
+}
+
+.transport-section {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.transport-block {
+  margin-bottom: 30px;
+}
+
+.transport-block h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #5c5550;
+}
+
+.transport-block p {
+  margin: 6px 0;
+}
+
+.transport-desc {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #888;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons a {
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  color: #444;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.nav-buttons a:hover {
+  background: #f2eee9;
+}
+
+.transport-sub {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+.transport-section hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+
+.parking-dot {
+  color: #8b6f61;  /* 웨딩톤 브라운 */
+  margin-right: 6px;
 }
 
 .address-copy-btn {
@@ -386,16 +460,17 @@ body {
 /* ===== Account ===== */
 
 .account-section {
-  background: #f6f1ea;
+  background: #ffffff;
   padding: 80px 20px;
   text-align: center;
 }
 
 .account-title {
-  font-family: 'Noto Serif KR', serif;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  margin-bottom : 40px;
+  color: #6e5f56;
 }
 
 .account-toggle button {
@@ -570,10 +645,10 @@ body {
 
 .guestbook-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 32px;
+  font-size: 18px;
   letter-spacing: 0.3em;
-  margin-bottom: 40px;
-  color: #8b6f61;
+  margin-bottom : 40px;
+  color: #6e5f56;
 }
 
 .guestbook-form {
@@ -607,17 +682,40 @@ body {
   cursor: pointer;
 }
 
+.guestbook-list {
+  margin-top: 30px;
+}
+
+.guestbook-header {
+  display: flex;
+  justify-content: space-between; /* 🔥 좌우 끝 배치 */
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .guestbook-item {
   background: white;
-  padding: 16px;
+  padding: 18px 20px;
   border-radius: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+  text-align: left; /* 🔥 왼쪽 정렬 */
 }
 
 .guestbook-name {
   font-weight: 600;
-  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.guestbook-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.guestbook-content {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
 }
 
 .wedding-section {
@@ -627,12 +725,6 @@ body {
   overflow-x: hidden;   /* 혹시 가로 넘침 방지 */
 }
 
-.wedding-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 36px;
-  letter-spacing: 0.2em;
-  margin-bottom: 20px;
-}
 
 .wedding-date {
   margin-bottom: 40px;
@@ -667,30 +759,31 @@ body {
 }
 
 .countdown {
-  display: flex;
-  flex-wrap: wrap;               /* 줄바꿈 허용 */
-  justify-content: center;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4개 고정 */
+  gap: 14px;
   margin-bottom: 30px;
 }
 
 .count-card {
-  background: white;
-  padding: 18px;
-  border-radius: 16px;
-  flex: 1 1 80px;                /* 자동 줄바꿈 */
-  max-width: 110px;              /* 카드 최대폭 제한 */
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  padding: 16px 10px;   /* 세로는 유지, 좌우 줄임 */
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  
 }
 
 .count-card div {
-  font-size: 28px;
+  font-size: 24px;   /* 숫자 살짝 줄임 */
   font-weight: 600;
 }
 
 .count-card span {
-  font-size: 12px;
+  font-size: 11px;   /* 텍스트 살짝 줄임 */
   color: #999;
+  letter-spacing: 1px;
 }
 
 .wedding-message {

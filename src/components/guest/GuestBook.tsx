@@ -68,8 +68,20 @@ export default function GuestBook() {
       <div className="guestbook-list">
         {messages.map((msg) => (
           <div key={msg.id} className="guestbook-item">
-            <div className="guestbook-name">{msg.name}</div>
-            <div className="guestbook-content">{msg.content}</div>
+
+            <div className="guestbook-header">
+              <span className="guestbook-name">{msg.name}</span>
+              <span className="guestbook-date">
+                {msg.createdAt?.toDate
+                  ? msg.createdAt.toDate().toLocaleDateString()
+                  : ""}
+              </span>
+            </div>
+
+            <div className="guestbook-content">
+              {msg.content}
+            </div>
+
           </div>
         ))}
       </div>
