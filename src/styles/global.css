@@ -623,6 +623,7 @@ body {
   background: #f5f2ee;
   padding: 80px 24px;
   text-align: center;
+  overflow-x: hidden;   /* 혹시 가로 넘침 방지 */
 }
 
 .wedding-title {
@@ -641,7 +642,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .calendar-header {
@@ -650,9 +651,12 @@ body {
 }
 
 .calendar-cell {
-  padding: 12px;
+  aspect-ratio: 1 / 1;           /* 정사각형 유지 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  min-height: 40px;
+  font-size: 15px;
 }
 
 .wedding-day {
@@ -663,6 +667,7 @@ body {
 
 .countdown {
   display: flex;
+  flex-wrap: wrap;               /* 줄바꿈 허용 */
   justify-content: center;
   gap: 16px;
   margin-bottom: 30px;
@@ -672,7 +677,8 @@ body {
   background: white;
   padding: 18px;
   border-radius: 16px;
-  min-width: 80px;
+  flex: 1 1 80px;                /* 자동 줄바꿈 */
+  max-width: 110px;              /* 카드 최대폭 제한 */
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 

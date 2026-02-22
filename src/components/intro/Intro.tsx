@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import heroImage from "../../assets/images/gallery/main.jpg";
 import bgm from "../../assets/music/bgm.mp3";
 import { Pause, Play } from "lucide-react";
@@ -27,6 +27,22 @@ export default function Intro() {
     setProgress((current / duration) * 100);
   };
 
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    const playAudio = async () => {
+      try {
+        await audio.play();
+        setPlaying(true);
+      } catch (error) {
+        // 모바일 브라우저 autoplay 차단됨
+        console.log("Autoplay prevented:", error);
+      }
+    };
+
+    playAudio();
+  }, []);
+
   return (
     <div className="intro-wrapper">
       <div className="intro-title">
@@ -51,6 +67,8 @@ export default function Intro() {
           ref={audioRef}
           src={bgm}
           onTimeUpdate={handleTimeUpdate}
+          preload="auto"
+          loop
         />
 
         <div className="progress-bar">

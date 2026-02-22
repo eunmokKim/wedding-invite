@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FadeIn from "../FadeIn";
+import { Copy } from "lucide-react";
 
 interface PersonAccount {
   role: string;
@@ -80,11 +81,8 @@ export default function AccountSection() {
                         <span className="account-number">
                           {person.bank} {person.number}
                         </span>
-                        <button
-                          className="copy-btn"
-                          onClick={() => copy(person.number)}
-                        >
-                          복사
+                        <button onClick={() => copy(person.number)} className="copy-btn">
+                          <Copy size={14} strokeWidth={1.5} />
                         </button>
                       </div>
                     </div>
