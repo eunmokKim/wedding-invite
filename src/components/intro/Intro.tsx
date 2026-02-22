@@ -57,7 +57,7 @@ export default function Intro() {
           <h1>
             은목 <span className="heart">♥</span> 혜진
           </h1>
-          <p className="date">2026.06.07 SUN PM 2:00</p>
+          <p className="date">2026.06.07 SUN <br/>PM 2:00</p>
         </div>
       </section>
 

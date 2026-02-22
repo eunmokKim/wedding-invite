@@ -1,6 +1,7 @@
 import { MapPin, Phone, Copy } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import FadeIn from "../FadeIn";
+import Toast from "../Toast";
 
 declare global {
   interface Window {
@@ -9,12 +10,14 @@ declare global {
 }
 
 export default function Location() {
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
   const address =
-    "서울 송파구 올림픽로35길 137 한국광고문화회관 2층";
+    "서울 송파구 올림픽로35길 137 \n한국광고문화회관 2층";
 
   const copyAddress = () => {
     navigator.clipboard.writeText(address);
-    alert("주소가 복사되었습니다");
+    setToastMessage("주소가 복사되었습니다");
   };
 
   useEffect(() => {
@@ -93,6 +96,14 @@ export default function Location() {
           }}
         ></div>
       </FadeIn>
+      {toastMessage && (
+        <Toast
+          message={toastMessage}
+          onClose={() => setToastMessage(null)}
+        />
+      )}
     </div>
+    
+    
   );
 }

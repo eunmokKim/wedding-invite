@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FadeIn from "../FadeIn";
 import { Copy } from "lucide-react";
+import Toast from "../Toast";
 
 interface PersonAccount {
   role: string;
@@ -34,9 +35,9 @@ const familyAccounts: FamilyAccount[] = [
 ];
 
 export default function AccountSection() {
-
   // 🔥 side별 열림 상태 관리
   const [openSide, setOpenSide] = useState<string | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const toggleSide = (side: string) => {
     setOpenSide(prev => (prev === side ? null : side));
@@ -44,7 +45,7 @@ export default function AccountSection() {
 
   const copy = (text: string) => {
     navigator.clipboard.writeText(text.replaceAll("-", "").trim());
-    alert("계좌번호가 복사되었습니다");
+    setToastMessage("계좌번호가 복사되었습니다");
   };
 
   return (
@@ -94,6 +95,12 @@ export default function AccountSection() {
           ))}
         </div>
       </FadeIn>
+      {toastMessage && (
+        <Toast
+          message={toastMessage}
+          onClose={() => setToastMessage(null)}
+        />
+      )}
     </div>
   );
 }

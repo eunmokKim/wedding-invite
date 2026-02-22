@@ -1,10 +1,13 @@
 import { Link } from "lucide-react";
+import Toast from "../Toast";
+import { useState } from "react";
 
 export default function Footer() {
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);
-    alert("청첩장 링크가 복사되었습니다");
+    setToastMessage("청첩장 링크가 복사되었습니다");
   };
 
   return (
@@ -22,7 +25,12 @@ export default function Footer() {
       <div className="footer-content">
         <p>© 김은목 · 김혜진</p>
       </div>
-
+      {toastMessage && (
+        <Toast
+          message={toastMessage}
+          onClose={() => setToastMessage(null)}
+        />
+      )}
     </footer>
   );
 }
