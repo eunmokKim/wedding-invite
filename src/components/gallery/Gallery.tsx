@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 import img1 from "../../assets/images/gallery/ws01.jpg";
@@ -8,6 +8,7 @@ import img4 from "../../assets/images/gallery/ws04.jpg";
 import img5 from "../../assets/images/gallery/ws05.jpg";
 import img6 from "../../assets/images/gallery/ws06.jpg";
 import FadeIn from "../FadeIn";
+import { createPortal } from "react-dom";
 
 const images = [img1, img2, img3, img4, img5, img6];
 
@@ -36,6 +37,18 @@ export default function Gallery() {
     );
   };
 
+  useEffect(() => {
+    if (currentIndex !== null) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [currentIndex]);
+
   return (
       <div className="gallery-section">
         <FadeIn>
@@ -52,7 +65,8 @@ export default function Gallery() {
           </div>
 
           {/* 🔥 풀스크린 모달 */}
-          {currentIndex !== null && (
+          {currentIndex !== null && 
+          createPortal(
             <div className="gallery-modal">
               <div className="modal-top">
                 <span>
@@ -76,7 +90,7 @@ export default function Gallery() {
               <button className="modal-right" onClick={next}>
                 <ChevronRight size={32} />
               </button>
-            </div>
+            </div>, document.body
           )}
         </FadeIn>
       </div>

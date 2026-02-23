@@ -243,11 +243,23 @@ body {
 .gallery-modal {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
+
   background: rgba(0, 0, 0, 0.95);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+
+  z-index: 99999;
+
+  left: 0;
+  top: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .modal-image {
@@ -499,6 +511,7 @@ body {
   border-radius: 20px;
   background: white;
   font-size: 14px;
+  color: #7a6f66;
   cursor: pointer;
 }
 
@@ -577,11 +590,12 @@ body {
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 12px;
+  color: #7a6f66;
   cursor: pointer;
 }
 
 .copy-btn:hover {
-  background: #e0d8cf;
+  background: #eee9e3;
 }
 
 /* ===== Footer ===== */
