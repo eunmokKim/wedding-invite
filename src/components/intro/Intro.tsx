@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import heroImage from "../../assets/images/gallery/main.jpg";
-import bgm from "../../assets/music/bgm2.mp3";
+import bgm from "../../assets/music/bgm.mp3";
 import { Pause, Play } from "lucide-react";
 
 export default function Intro() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
 
   const togglePlay = () => {
     if (!audioRef.current) return;
@@ -18,13 +17,6 @@ export default function Intro() {
     }
 
     setPlaying(!playing);
-  };
-
-  const handleTimeUpdate = () => {
-    if (!audioRef.current) return;
-    const current = audioRef.current.currentTime;
-    const duration = audioRef.current.duration;
-    setProgress((current / duration) * 100);
   };
 
   useEffect(() => {
@@ -60,7 +52,6 @@ export default function Intro() {
         <audio
           ref={audioRef}
           src={bgm}
-          onTimeUpdate={handleTimeUpdate}
           preload="auto"
           loop
         />
