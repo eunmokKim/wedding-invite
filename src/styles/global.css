@@ -708,7 +708,7 @@ body.modal-open {
   border: 1px solid #cfc7bd;
   border-radius: 20px;
   background: white;
-  font-size: 14px;
+  font-size: 12px;
   color: #7a6f66;
   cursor: pointer;
 }
@@ -739,7 +739,7 @@ body.modal-open {
 }
 
 .family-title {
-  font-size: 18px;
+  font-size: 16x;
   font-weight: 600;
   color: #9c8b7b;
 }
@@ -1021,7 +1021,7 @@ body.modal-open {
   color: white;
   padding: 12px 20px;
   border-radius: 24px;
-  font-size: 14px;
+  font-size: 12px;
   z-index: 9999;
   animation: toastFade 0.3s ease;
 }
