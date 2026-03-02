@@ -23,12 +23,22 @@ export default function Greeting() {
 
         <div className="greeting-content">
           <p>
-            저희 두 사람의 작은 만남이
-            <br />
-            사랑의 결실을 이루어
-            <br />
-            소중한 결혼식을 올리게 되었습니다.
-          </p>
+              저희 두 사람의 작은 만남이
+              <br />
+              사랑의 결실을 이루어
+              <br />
+              소중한 결혼식을 올리게 되었습니다.
+              <br /><br />
+              평생 서로 귀하게 여기며
+              <br />
+              첫 마음 그대로 존중하고 배려하며 살겠습니다.
+              <br /><br />
+              오로지 믿음과 사랑을 약속하는 날
+              <br />
+              오셔서 축복해 주시면 더 없는 기쁨으로
+              <br />
+              간직하겠습니다.
+            </p>
         </div>
 
         <div className="family-info">
@@ -45,13 +55,12 @@ export default function Greeting() {
         createPortal(
           <div className="contact-modal-full">
             <div className="contact-modal-card">
-              <button className="contact-close" onClick={() => setOpen(false)}>
-                <X size={20} />
-              </button>
-
               <div className="contact-header">
                 <div className="contact-script">Contact</div>
                 <h2>연락하기</h2>
+                <button className="contact-close" onClick={() => setOpen(false)}>
+                  <X size={24} />
+                </button>
               </div>
 
               {/* ===== 신랑측 ===== */}

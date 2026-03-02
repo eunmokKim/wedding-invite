@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  background: #ffffff;  /* 완전 흰색 */
+  background: #ffffff;
   color: #3a3a3a;
-  font-family: 'Pretendard', sans-serif;
-  line-height: 1.7;
+  font-family: 'Noto Serif KR', serif;
+  line-height: 1.8;
 }
 
 .container {
@@ -332,13 +332,13 @@ body {
 }
 
 .contact-role {
-  font-size: 14px;
+  font-size: 12px;
   color: #8a8a8a;
   width: 70px; /* 정렬 */
 }
 
 .contact-name {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #222;
 }
@@ -492,6 +492,7 @@ body.modal-open {
 
 /* 맵 */
 .location-section {
+  font-family: 'Noto Serif KR', serif;
   background: #f5f2ee;
   padding: 80px 28px;
   text-align: center;
@@ -520,8 +521,21 @@ body.modal-open {
 .location-buttons {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
   margin: 30px 0 50px 0;
+}
+
+.location-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid #cfc6bd;
+  background: #ffffff;
+  text-decoration: none;
+  color: #5c5550;
+  font-size: 14px;
 }
 
 .location-buttons a {
@@ -764,7 +778,7 @@ body.modal-open {
 }
 
 .account-number {
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -925,8 +939,16 @@ body.modal-open {
 
 
 .wedding-date {
-  margin-bottom: 40px;
-  color: #7b6d60;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.wedding-time {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px;
+  margin-bottom: 24px;
 }
 
 .calendar {
@@ -974,8 +996,9 @@ body.modal-open {
 }
 
 .count-card div {
-  font-size: 24px;   /* 숫자 살짝 줄임 */
-  font-weight: 600;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .count-card span {
