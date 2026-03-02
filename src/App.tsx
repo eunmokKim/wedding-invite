@@ -12,8 +12,8 @@ function App() {
     <div className="container">
       <Intro />
       <Greeting />
-      <WeddingDay />
       <Gallery />
+      <WeddingDay />
       <Location />
       <Account />
       <GuestBook />
