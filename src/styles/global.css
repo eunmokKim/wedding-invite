@@ -521,7 +521,7 @@ body.modal-open {
 .location-buttons {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   margin: 30px 0 50px 0;
 }
 
@@ -541,8 +541,8 @@ body.modal-open {
 .location-buttons a {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 10px 20px;
+  gap: 4px;
+  padding: 10px 15px;
   border-radius: 999px;
   border: 1px solid #cfc6bd;
   background: #ffffff;
@@ -612,7 +612,7 @@ body.modal-open {
 
 .transport-sub {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 11px;
   color: #777;
 }
 

@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-import img1 from "../../assets/images/gallery/ws01.jpg";
-import img2 from "../../assets/images/gallery/ws02.jpg";
-import img3 from "../../assets/images/gallery/ws03.jpg";
-import img4 from "../../assets/images/gallery/ws04.jpg";
-import img5 from "../../assets/images/gallery/ws05.jpg";
-import img6 from "../../assets/images/gallery/ws06.jpg";
-import img7 from "../../assets/images/gallery/ws07.jpg";
-import img8 from "../../assets/images/gallery/ws08.jpg";
-import img9 from "../../assets/images/gallery/ws09.jpg";
-import img10 from "../../assets/images/gallery/ws10.jpg";
-import img11 from "../../assets/images/gallery/ws11.jpg";
-import img12 from "../../assets/images/gallery/ws12.jpg";
+import img1 from "/gallery/ws01.jpg";
+import img2 from "/gallery/ws02.jpg";
+import img3 from "/gallery/ws03.jpg";
+import img4 from "/gallery/ws04.jpg";
+import img5 from "/gallery/ws05.jpg";
+import img6 from "/gallery/ws06.jpg";
+import img7 from "/gallery/ws07.jpg";
+import img8 from "/gallery/ws08.jpg";
+import img9 from "/gallery/ws09.jpg";
+import img10 from "/gallery/ws10.jpg";
+import img11 from "/gallery/ws11.jpg";
+import img12 from "/gallery/ws12.jpg";
 import FadeIn from "../FadeIn";
 import { createPortal } from "react-dom";
 
@@ -65,7 +65,7 @@ export default function Gallery() {
           <div className="gallery-grid">
             {images.map((src, i) => (
               <div key={i} className="gallery-item" onClick={() => open(i)}>
-                <img src={src} alt={`gallery-${i}`} />
+                <img src={src} alt={`gallery-${i}`} loading="lazy" />
               </div>
             ))}
           </div>

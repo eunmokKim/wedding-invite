@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import heroImage from "../../assets/images/gallery/main.jpg";
+import heroImage from "/gallery/main.jpg";
 import bgm from "../../assets/music/bgm.mp3";
 import { Pause, Play } from "lucide-react";
 
