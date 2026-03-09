@@ -20,16 +20,15 @@ const familyAccounts: FamilyAccount[] = [
     side: "신랑 측",
     accounts: [
       { role: "신랑", bank: "하나은행", number: "759-910177-12507", name: "김은목" },
-      { role: "아버지", bank: "하나은행", number: "292-910256-24907", name: "김만식" },
-      { role: "어머니", bank: "기업은행", number: "020-114764-01010", name: "박현주" },
+      { role: "아버지", bank: "국민은행", number: "052301-04-222806", name: "김만식" },
     ],
   },
   {
     side: "신부 측",
     accounts: [
       { role: "신부", bank: "국민은행", number: "361-401041-38627", name: "김혜진" },
-      { role: "아버지", bank: "신한은행", number: "777-888-9999", name: "김동수" },
-      { role: "어머니", bank: "농협", number: "000-111-2222", name: "이선자" },
+      { role: "아버지", bank: "농협", number: "189-12-235801", name: "김동수" },
+      { role: "어머니", bank: "국민은행", number: "672-702961-03697", name: "이선자" },
     ],
   },
 ];
