@@ -43,7 +43,7 @@ export default function Greeting() {
 
         <div className="family-info">
           <p>김만식 · 박현주의 아들 <strong>김은목</strong></p>
-          <p>김동수 · 이선자의 &nbsp;딸&nbsp;&nbsp; <strong>김혜진</strong></p>
+          <p>김동수 · 이선자의 &nbsp;&nbsp;딸&nbsp;&nbsp; <strong>김혜진</strong></p>
         </div>
 
         <button className="contact-btn" onClick={() => setOpen(true)}>

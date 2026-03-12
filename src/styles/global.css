@@ -36,7 +36,7 @@ body {
 
 .intro-wrapper {
   background: #f5f2ee;  /* 연한 베이지 */
-  padding: 20px 20px;  /* 위아래 공간 */
+  padding: 40px 20px;  /* 위아래 공간 */
 }
 
 .intro-title {
@@ -147,7 +147,7 @@ body {
 
 .greeting-section {
   background: #ffffff;   /* 연한 베이지 */
-  padding: 40px 28px;
+  padding: 40px 28px 60px ;
   text-align: center;
 }
 
@@ -380,7 +380,7 @@ body {
 
 .gallery-section {
   background: #f5f2ee;   /* Greeting과 동일 */
-  padding: 40px 28px;
+  padding: 40px 28px 60px;
   text-align: center;
 }
 
@@ -673,7 +673,7 @@ body.modal-open {
 
 .account-section {
   background: #ffffff;
-  padding: 40px 20px;
+  padding: 40px 20px 60px;
   text-align: center;
 }
 
@@ -686,6 +686,7 @@ body.modal-open {
 }
 
 .account-message {
+  font-family: 'Cormorant Garamond', serif;
   margin-bottom: 50px;
   font-size: 14px;
   line-height: 1.9;
@@ -951,7 +952,7 @@ body.modal-open {
 
 .wedding-section {
   background: white;
-  padding: 40px 24px;
+  padding: 40px 24px 60px;
   text-align: center;
   overflow-x: hidden;   /* 혹시 가로 넘침 방지 */
 }
