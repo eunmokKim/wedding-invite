@@ -67,19 +67,19 @@ export default function Location() {
 
         <div className="location-buttons">
           <button onClick={copyAddress} className="address-copy-btn">
-              <Copy size={14} strokeWidth={1.5} />주소복사
+              <Copy size={13} strokeWidth={1.3} />주소복사
           </button>
           <a
             href="https://map.kakao.com/link/map/잠실아펠가모,37.5159272595028,127.099643159822"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MapPin size={16} strokeWidth={1.5} />
+            <MapPin size={13} strokeWidth={1.3} />
             지도
           </a>
 
           <a href="tel:0221440230">
-            <Phone size={16} strokeWidth={1.5} />
+            <Phone size={13} strokeWidth={1.3} />
             전화
           </a>
         </div>

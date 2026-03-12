@@ -15,11 +15,17 @@ import img11 from "/gallery/ws11.jpg";
 import img12 from "/gallery/ws12.jpg";
 import FadeIn from "../FadeIn";
 import { createPortal } from "react-dom";
+import { useSwipeable } from "react-swipeable";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+const images = [img2, img1, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
 
 export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => next(),
+    onSwipedRight: () => prev(),
+    trackMouse: true, // PC에서도 드래그 가능
+  });
 
   const open = (index: number) => {
     setCurrentIndex(index);
@@ -73,7 +79,7 @@ export default function Gallery() {
           {/* 🔥 풀스크린 모달 */}
           {currentIndex !== null && 
           createPortal(
-            <div className="gallery-modal">
+            <div className="gallery-modal" {...handlers}>
               <div className="modal-top">
                 <span>
                   {currentIndex + 1} / {images.length}

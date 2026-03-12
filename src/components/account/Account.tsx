@@ -52,6 +52,13 @@ export default function AccountSection() {
     <div className="account-section">
       <FadeIn>
         <div className="account-title">마음 전하실 곳</div>
+        <div className="account-message">
+        참석이 어려워 직접 축하를 전하지 못하는<br />
+        분들을 위해 계좌번호를 기재하였습니다.<br />
+        넓은 마음으로 양해 부탁드립니다.<br />
+        전해주시는 진심은 소중하게 간직하여<br />
+        좋은 부부의 모습으로 보답하겠습니다.
+      </div>
 
         <div className="family-account-list">
           {familyAccounts.map((family, i) => (
@@ -74,16 +81,18 @@ export default function AccountSection() {
                   {family.accounts.map((person, idx) => (
                     <div className="account-row" key={idx}>
                       <div className="account-left">
-                        <div className="account-role">{person.role}</div>
-                        <div className="account-name">{person.name}</div>
+                        <div className="account-person">
+                          <span className="account-role">{person.role}</span>
+                          <span className="account-name">{person.name}</span>
+                        </div>
+                        <div className="account-number">
+                          {person.bank} {person.number}
+                        </div>
                       </div>
 
                       <div className="account-right">
-                        <span className="account-number">
-                          {person.bank} {person.number}
-                        </span>
                         <button onClick={() => copy(person.number)} className="copy-btn">
-                          <Copy size={14} strokeWidth={1.5} />
+                          <Copy size={14} strokeWidth={1.5} />복사
                         </button>
                       </div>
                     </div>
