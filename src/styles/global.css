@@ -2,7 +2,9 @@ body {
   margin: 0;
   background: #ffffff;
   color: #3a3a3a;
-  font-family: 'Noto Serif KR', serif;
+
+  font-family: 'Noto Serif KR', serif;   /* 기본은 한글 중심 */
+  font-weight: 400;
   line-height: 1.8;
 }
 
@@ -41,7 +43,8 @@ body {
 
 .intro-title {
   text-align: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
   font-size: 36px;
   font-style: italic;
   color: #6e5f56;
@@ -156,15 +159,15 @@ body {
 }
 
 .invitation-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
   color: #6e5f56;
 }
 
 .greeting-content p {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 2;
   color: #4b4440;
@@ -177,6 +180,7 @@ body {
 }
 
 .family-info p {
+  font-family: 'Noto Serif KR', serif;
   margin: 10px 0;
   font-size: 16px;
   color: #5c5550;
@@ -390,7 +394,7 @@ body {
 }
 
 .gallery-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
   color: #6e5f56;
@@ -504,7 +508,7 @@ body.modal-open {
 }
 
 .location-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
   color: #6e5f56;
@@ -583,6 +587,7 @@ body.modal-open {
 }
 
 .transport-block p {
+  font-family: 'Noto Serif KR', serif;
   margin: 6px 0;
 }
 
@@ -679,7 +684,7 @@ body.modal-open {
 }
 
 .account-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif KR', serif;
   letter-spacing: 0.2em;
   font-size: 18px;
   font-weight: 500;
@@ -689,7 +694,7 @@ body.modal-open {
 }
 
 .account-message {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif KR', serif;
   margin-bottom: 50px;
   font-size: 14px;
   line-height: 1.9;
@@ -850,7 +855,6 @@ body.modal-open {
   padding: 14px 0;
   text-align: center;
 
-  font-family: 'Cormorant Garamond', serif;
   font-size: 14px;
   letter-spacing: 1.5px;
   color: #7a6f66;
@@ -879,7 +883,7 @@ body.modal-open {
 }
 
 .guestbook-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
   margin-bottom : 40px;
@@ -948,6 +952,7 @@ body.modal-open {
 }
 
 .guestbook-content {
+  font-family: 'Noto Serif KR', serif;
   font-size: 14px;
   color: #444;
   line-height: 1.6;
@@ -962,7 +967,7 @@ body.modal-open {
 
 
 .wedding-date {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 32px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -1019,7 +1024,6 @@ body.modal-open {
 }
 
 .count-card div {
-  font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
   font-weight: 500;
 }
@@ -1031,6 +1035,7 @@ body.modal-open {
 }
 
 .wedding-message {
+  font-family: 'Noto Serif KR', serif;
   margin-top: 10px;
   color: #7b6d60;
 }
