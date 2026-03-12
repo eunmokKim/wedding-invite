@@ -163,7 +163,8 @@ body {
 }
 
 .greeting-content p {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
   font-size: 15px;
   line-height: 2;
   color: #4b4440;
@@ -678,8 +679,9 @@ body.modal-open {
 }
 
 .account-title {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 18px;
+  font-weight: 500;
   letter-spacing: 0.3em;
   margin-bottom : 40px;
   color: #6e5f56;
