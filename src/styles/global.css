@@ -37,8 +37,13 @@ body {
 }
 
 .intro-wrapper {
-  background: #f5f2ee;  /* 연한 베이지 */
-  padding: 40px 20px;  /* 위아래 공간 */
+  position: relative;
+  padding: 40px 20px;
+
+  background-image: url('/gallery/main.jpg'); /* 또는 inline style */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .intro-title {
@@ -160,7 +165,7 @@ body {
 .invitation-title {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  color: #53311b;
+  color: rgb(206, 111, 127);
 }
 
 .greeting-content p {
@@ -195,7 +200,8 @@ body {
 /* ========================= */
 
 .contact-btn {
-  margin-top: 40px;
+  font-family: 'Gowun Dodum', sans-serif;
+  margin-top: 20px;
   padding: 14px 36px;
   border-radius: 999px;
   border: 1px solid #dcdcdc;
@@ -383,8 +389,7 @@ body {
 /* 갤러리  */
 
 .gallery-section {
-  background: #f5f2ee;   /* Greeting과 동일 */
-  padding: 40px 28px 60px;
+  padding: 40px 0px 60px;
   text-align: center;
 }
 
@@ -395,7 +400,7 @@ body {
 .gallery-title {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  color: #53311b;
+  color: rgb(206, 111, 127);
 }
 
 .gallery-item {
@@ -412,12 +417,11 @@ body {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 2px;
 }
 
 .gallery-item img {
   width: 100%;
-  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -495,8 +499,7 @@ body.modal-open {
 
 /* 맵 */
 .location-section {
-    font-family: 'Gowun Dodum', sans-serif;
-  background: #f5f2ee;
+  font-family: 'Gowun Dodum', sans-serif;
   padding: 40px 28px;
   text-align: center;
 }
@@ -508,7 +511,7 @@ body.modal-open {
 .location-title {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  color: #53311b;
+  color: rgb(206, 111, 127);
 }
 
 .location-info h3 {
@@ -682,12 +685,11 @@ body.modal-open {
 }
 
 .account-title {
-    font-family: 'Gowun Dodum', sans-serif;
-
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-bottom : 40px;
-  color: #53311b;
+  color: rgb(206, 111, 127);
 }
 
 .account-message {
@@ -876,7 +878,6 @@ body.modal-open {
 }
 
 .guestbook-section {
-  background: #f5f2ee;
   padding: 40px 24px;
   text-align: center;
 }
@@ -885,7 +886,7 @@ body.modal-open {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
   margin-bottom : 40px;
-  color: #53311b;
+  color: rgb(206, 111, 127);
 }
 
 .guestbook-form {
@@ -966,16 +967,17 @@ body.modal-open {
 
 
 .wedding-date {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  letter-spacing: 2px;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 18px;
   font-weight: 500;
+  margin-bottom : 20px;
+  color: rgb(206, 111, 127);
 }
 
-.wedding-time {
-    font-family: 'Gowun Dodum', sans-serif;
 
-  font-size: 16px;
+.wedding-time {
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 15px;
   margin-bottom: 24px;
 }
 

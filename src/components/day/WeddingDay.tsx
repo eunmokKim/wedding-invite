@@ -47,9 +47,9 @@ export default function WeddingDay() {
     <div className="wedding-section">
         <FadeIn>
         <div className="wedding-date">
-            2026. 6. 7
-            <div className="wedding-time">일요일 오후 2시</div>
+            <p>예식 안내</p>
         </div>
+        <div className="wedding-time">2026년 6월 7일 일요일 오후 2시</div>
 
         <div className="calendar">
             {["일","월","화","수","목","금","토"].map((d) => (

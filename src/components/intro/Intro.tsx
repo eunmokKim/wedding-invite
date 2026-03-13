@@ -45,7 +45,7 @@ export default function Intro() {
         Love begins here
       </div>
 
-      <section className="intro-hero" style={{ backgroundImage: `url(${heroImage})` }}>
+      <section className="intro-hero" >
       </section>
 
       {/* 🎵 음악 영역 */}
