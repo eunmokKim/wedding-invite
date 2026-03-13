@@ -622,7 +622,7 @@ body.modal-open {
   margin-top: 10px;
   font-size: 12px;
   font-weight: 600;
-  color: #53311b;
+  color: #5c5550;
 }
 
 .transport-section hr {
@@ -632,7 +632,7 @@ body.modal-open {
 }
 
 .parking-dot {
-  color: #8b6f61;  /* 웨딩톤 브라운 */
+  color: #5c5550;  /* 웨딩톤 브라운 */
   margin-right: 6px;
 }
 
@@ -690,7 +690,7 @@ body.modal-open {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.3em;
-  margin-bottom : 20px;
+  margin-bottom : 40px;
   color: #53311b;
 }
 
@@ -699,7 +699,7 @@ body.modal-open {
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
-  line-height: 2;      /* 🔥 1.9 → 2.1 */
+  line-height: 2.2;      /* 🔥 1.9 → 2.1 */
   letter-spacing: 0.02em; /* 🔥 글자 간격 살짝 */
   color: #53311b;;
   text-align: center;
@@ -768,7 +768,7 @@ body.modal-open {
 .family-card {
   background: white;
   border-radius: 16px;
-  padding: 24px;
+  padding: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   text-align: left;
 }
