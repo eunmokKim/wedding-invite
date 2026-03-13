@@ -695,11 +695,12 @@ body.modal-open {
 
 .account-message {
   font-family: 'Noto Serif KR', serif;
+  font-weight: 400;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2;      /* 🔥 1.9 → 2.1 */
   letter-spacing: 0.02em; /* 🔥 글자 간격 살짝 */
-  color: #7b6d60;
+  color: #4b4440;;
   text-align: center;
 }
 
