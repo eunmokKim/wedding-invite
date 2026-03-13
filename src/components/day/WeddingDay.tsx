@@ -79,11 +79,11 @@ export default function WeddingDay() {
             </div>
             <div className="count-card">
             <div>{timeLeft.minutes}</div>
-            <span>MINUTES</span>
+            <span>MIN</span>
             </div>
             <div className="count-card">
             <div>{timeLeft.seconds}</div>
-            <span>SECONDS</span>
+            <span>SEC</span>
             </div>
         </div>
 

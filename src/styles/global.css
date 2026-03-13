@@ -44,10 +44,9 @@ body {
 .intro-title {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  font-size: 36px;
+  font-size: 30px;
   font-style: italic;
-  color: #6e5f56;
+  color: #53311b;
 
   margin-bottom: 28px;
 }
@@ -162,15 +161,15 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
-  color: #6e5f56;
+  color: #53311b;
 }
 
 .greeting-content p {
   font-family: 'Noto Serif KR', serif;
-  font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 2;
-  color: #4b4440;
+  color: #53311b;
   margin-bottom: 30px;
 }
 
@@ -343,7 +342,7 @@ body {
 }
 
 .contact-name {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #222;
 }
@@ -397,7 +396,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
-  color: #6e5f56;
+  color: #53311b;
 }
 
 .gallery-item {
@@ -511,7 +510,7 @@ body.modal-open {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 0.3em;
-  color: #6e5f56;
+  color: #53311b;
 }
 
 .location-info h3 {
@@ -621,7 +620,8 @@ body.modal-open {
 .transport-sub {
   margin-top: 10px;
   font-size: 12px;
-  color: #000000;
+  font-weight: 600;
+  color: #53311b;
 }
 
 .transport-section hr {
@@ -690,17 +690,17 @@ body.modal-open {
   font-weight: 500;
   letter-spacing: 0.3em;
   margin-bottom : 20px;
-  color: #6e5f56;
+  color: #53311b;
 }
 
 .account-message {
   font-family: 'Noto Serif KR', serif;
-  font-weight: 400;
   margin-bottom: 30px;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 2;      /* 🔥 1.9 → 2.1 */
   letter-spacing: 0.02em; /* 🔥 글자 간격 살짝 */
-  color: #4b4440;;
+  color: #53311b;;
   text-align: center;
 }
 
@@ -808,16 +808,17 @@ body.modal-open {
 }
 
 .account-number {
-  font-size: 13px;
+  font-size: 12px;
+  font-weight:500;
   white-space: nowrap;
 }
 
 .copy-btn {
   border: none;
   background: #f3efea;
-  padding: 6px 14px;
+  padding: 8px 8px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 10px;
   color: #7a6f66;
   cursor: pointer;
 }
@@ -889,7 +890,7 @@ body.modal-open {
   font-size: 18px;
   letter-spacing: 0.3em;
   margin-bottom : 40px;
-  color: #6e5f56;
+  color: #53311b;
 }
 
 .guestbook-form {
@@ -962,7 +963,7 @@ body.modal-open {
 
 .wedding-section {
   background: white;
-  padding: 40px 24px 60px;
+  padding: 40px 16px 60px;
   text-align: center;
   overflow-x: hidden;   /* 혹시 가로 넘침 방지 */
 }
@@ -1011,7 +1012,7 @@ body.modal-open {
 .countdown {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4개 고정 */
-  gap: 14px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 
@@ -1039,7 +1040,7 @@ body.modal-open {
 .wedding-message {
   font-family: 'Noto Serif KR', serif;
   margin-top: 10px;
-  color: #7b6d60;
+  color: #53311b;
 }
 
 .toast {

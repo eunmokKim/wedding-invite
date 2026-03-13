@@ -103,7 +103,7 @@ function ContactItem({ role, name, number }: { role: string; name: string; numbe
 
       <div className="contact-actions">
         <a href={`tel:${number}`}>
-          <Phone size={18} />
+          <Phone size={18}/>
         </a>
         <a href={`sms:${number}`}>
           <MessageCircle size={18} />
