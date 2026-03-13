@@ -182,6 +182,7 @@ body {
   font-family: 'Noto Serif KR', serif;
   margin: 10px 0;
   font-size: 16px;
+  font-weight: 500;
   color: #5c5550;
 }
 
@@ -593,7 +594,7 @@ body.modal-open {
 .transport-desc {
   font-size: 14px;
   margin-bottom: 16px;
-  color: #888;
+  color: #5c5550;
 }
 
 .nav-buttons {
@@ -781,7 +782,7 @@ body.modal-open {
 .family-title {
   font-size: 16x;
   font-weight: 600;
-  color: #9c8b7b;
+  color: #5c5550;
 }
 
 .account-row {
