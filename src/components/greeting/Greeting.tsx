@@ -18,7 +18,7 @@ export default function Greeting() {
     <div className="greeting-section">
       <FadeIn>
         <div className="invitation-header">
-          <div className="invitation-title">INVITATION</div>
+          <div className="invitation-title">소중한 분들을 초대합니다.</div>
         </div>
 
         <div className="greeting-content">

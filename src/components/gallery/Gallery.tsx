@@ -65,7 +65,7 @@ export default function Gallery() {
       <div className="gallery-section">
         <FadeIn>
           <div className="gallery-header">
-            <div className="gallery-title">GALLERY</div>
+            <div className="gallery-title">갤러리</div>
           </div>
 
           <div className="gallery-grid">

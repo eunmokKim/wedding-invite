@@ -53,7 +53,7 @@ export default function Location() {
     <div className="location-section">
       <FadeIn>
         <div className="location-header">
-          <div className="location-title">LOCATION</div>
+          <div className="location-title">오시는 길</div>
         </div>
 
         <div className="location-info">

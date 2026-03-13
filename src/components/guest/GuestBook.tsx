@@ -49,7 +49,7 @@ export default function GuestBook() {
   return (
     <div className="guestbook-section">
 
-      <div className="guestbook-title">GUEST BOOK</div>
+      <div className="guestbook-title">방 명 록</div>
 
       <div className="guestbook-form">
         <input

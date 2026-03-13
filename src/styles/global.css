@@ -3,7 +3,7 @@ body {
   background: #ffffff;
   color: #3a3a3a;
 
-  font-family: 'Noto Serif KR', serif;   /* 기본은 한글 중심 */
+  font-family: 'Gowun Dodum', sans-serif;
   font-weight: 400;
   line-height: 1.8;
 }
@@ -158,14 +158,14 @@ body {
 }
 
 .invitation-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.3em;
   color: #53311b;
 }
 
 .greeting-content p {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Gowun Dodum', sans-serif;
+
   font-size: 14px;
   font-weight: 600;
   line-height: 2;
@@ -179,7 +179,7 @@ body {
 }
 
 .family-info p {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Gowun Dodum', sans-serif;
   margin: 10px 0;
   font-size: 16px;
   font-weight: 500;
@@ -394,9 +394,8 @@ body {
 }
 
 .gallery-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.3em;
   color: #53311b;
 }
 
@@ -497,7 +496,7 @@ body.modal-open {
 
 /* 맵 */
 .location-section {
-  font-family: 'Noto Serif KR', serif;
+    font-family: 'Gowun Dodum', sans-serif;
   background: #f5f2ee;
   padding: 40px 28px;
   text-align: center;
@@ -508,9 +507,8 @@ body.modal-open {
 }
 
 .location-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.3em;
   color: #53311b;
 }
 
@@ -587,7 +585,7 @@ body.modal-open {
 }
 
 .transport-block p {
-  font-family: 'Noto Serif KR', serif;
+    font-family: 'Gowun Dodum', sans-serif;
   margin: 6px 0;
 }
 
@@ -685,22 +683,21 @@ body.modal-open {
 }
 
 .account-title {
-  font-family: 'Noto Serif KR', serif;
-  letter-spacing: 0.2em;
+    font-family: 'Gowun Dodum', sans-serif;
+
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0.3em;
   margin-bottom : 40px;
   color: #53311b;
 }
 
 .account-message {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Gowun Dodum', sans-serif;
+
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
   line-height: 2.2;      /* 🔥 1.9 → 2.1 */
-  letter-spacing: 0.02em; /* 🔥 글자 간격 살짝 */
   color: #53311b;;
   text-align: center;
 }
@@ -725,7 +722,6 @@ body.modal-open {
 .account-role {
   font-size: 13px;
   color: #9c8b7b;
-  letter-spacing: 0.3px;
 }
 
 .account-name {
@@ -887,9 +883,8 @@ body.modal-open {
 }
 
 .guestbook-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.3em;
   margin-bottom : 40px;
   color: #53311b;
 }
@@ -907,7 +902,7 @@ body.modal-open {
   padding: 14px;
   border-radius: 12px;
   border: 1px solid #ddd;
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Gowun Dodum', sans-serif;
 }
 
 .guestbook-form textarea {
@@ -923,6 +918,7 @@ body.modal-open {
   color: white;
   font-size: 14px;
   cursor: pointer;
+  font-family: 'Gowun Dodum', sans-serif;
 }
 
 .guestbook-list {
@@ -956,7 +952,7 @@ body.modal-open {
 }
 
 .guestbook-content {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 14px;
   color: #444;
   line-height: 1.6;
@@ -978,7 +974,8 @@ body.modal-open {
 }
 
 .wedding-time {
-  font-family: 'Noto Serif KR', serif;
+    font-family: 'Gowun Dodum', sans-serif;
+
   font-size: 16px;
   margin-bottom: 24px;
 }
@@ -1039,7 +1036,8 @@ body.modal-open {
 }
 
 .wedding-message {
-  font-family: 'Noto Serif KR', serif;
+    font-family: 'Gowun Dodum', sans-serif;
+
   margin-top: 10px;
   color: #53311b;
 }

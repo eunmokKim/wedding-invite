@@ -92,7 +92,7 @@ export default function AccountSection() {
 
                       <div className="account-right">
                         <button onClick={() => copy(person.number)} className="copy-btn">
-                          <Copy size={14} strokeWidth={1.5} />복사
+                          <Copy size={0} strokeWidth={1.5} />복사
                         </button>
                       </div>
                     </div>
