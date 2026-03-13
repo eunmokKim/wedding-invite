@@ -689,15 +689,16 @@ body.modal-open {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.3em;
-  margin-bottom : 40px;
+  margin-bottom : 20px;
   color: #6e5f56;
 }
 
 .account-message {
   font-family: 'Noto Serif KR', serif;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 14px;
-  line-height: 1.9;
+  line-height: 2;      /* 🔥 1.9 → 2.1 */
+  letter-spacing: 0.02em; /* 🔥 글자 간격 살짝 */
   color: #7b6d60;
   text-align: center;
 }
@@ -722,7 +723,7 @@ body.modal-open {
 .account-role {
   font-size: 13px;
   color: #9c8b7b;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .account-name {
