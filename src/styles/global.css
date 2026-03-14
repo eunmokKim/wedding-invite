@@ -621,7 +621,7 @@ body.modal-open {
 .transport-sub {
   margin-top: 10px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #5c5550;
 }
 
@@ -642,7 +642,8 @@ body.modal-open {
   border-radius: 6px;
   padding: 4px 6px;
   cursor: pointer;
-  color: #7a6f66;
+  color: #5c5550;
+  font-family: 'Gowun Dodum', sans-serif;
   transition: all 0.2s ease;
 }
 
@@ -694,10 +695,8 @@ body.modal-open {
 
 .account-message {
   font-family: 'Gowun Dodum', sans-serif;
-
   margin-bottom: 30px;
   font-size: 14px;
-  font-weight: 600;
   line-height: 2.2;      /* 🔥 1.9 → 2.1 */
   color: #53311b;;
   text-align: center;
@@ -828,7 +827,7 @@ body.modal-open {
 /* ===== Footer ===== */
 
 .footer-bar {
-  background: #6e6a66;
+  background: #5c5550;
   padding: 16px 0;
   display: flex;
   justify-content: center;
@@ -914,7 +913,7 @@ body.modal-open {
   padding: 12px;
   border-radius: 24px;
   border: none;
-  background: #8b6f61;
+  background: #5c5550;
   color: white;
   font-size: 14px;
   cursor: pointer;

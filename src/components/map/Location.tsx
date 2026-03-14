@@ -67,7 +67,7 @@ export default function Location() {
 
         <div className="location-buttons">
           <button onClick={copyAddress} className="address-copy-btn">
-              <Copy size={13} strokeWidth={1.3} />주소복사
+              <Copy size={9} strokeWidth={1.1} />주소복사
           </button>
           <a
             href="https://map.kakao.com/link/map/잠실아펠가모,37.5159272595028,127.099643159822"
