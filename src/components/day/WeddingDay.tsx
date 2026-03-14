@@ -88,7 +88,7 @@ export default function WeddingDay() {
         </div>
 
         <div className="wedding-message">
-            은목 ♥ 혜진 결혼식이 {timeLeft.days}일 남았습니다
+            은목 ♥ 혜진 결혼식이 {timeLeft.days}일 남았습니다.
         </div>
         </FadeIn>
     </div>

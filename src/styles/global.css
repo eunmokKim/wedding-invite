@@ -1036,10 +1036,10 @@ body.modal-open {
 }
 
 .wedding-message {
-    font-family: 'Gowun Dodum', sans-serif;
-
+  font-family: 'Gowun Dodum', sans-serif;
   margin-top: 10px;
   color: #53311b;
+  font-size: 15px;
 }
 
 .toast {
