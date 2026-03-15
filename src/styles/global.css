@@ -159,7 +159,7 @@ body {
 }
 
 .invitation-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .invitation-title {
@@ -394,7 +394,7 @@ body {
 }
 
 .gallery-header {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .gallery-title {
@@ -505,7 +505,7 @@ body.modal-open {
 }
 
 .location-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .location-title {
@@ -689,7 +689,7 @@ body.modal-open {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom : 40px;
+  margin-bottom : 30px;
   color: rgb(206, 111, 127);
 }
 
@@ -884,7 +884,7 @@ body.modal-open {
 .guestbook-title {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
-  margin-bottom : 40px;
+  margin-bottom : 30px;
   color: rgb(206, 111, 127);
 }
 
@@ -969,7 +969,7 @@ body.modal-open {
   font-family: 'Gowun Dodum', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom : 20px;
+  margin-bottom : 30px;
   color: rgb(206, 111, 127);
 }
 
