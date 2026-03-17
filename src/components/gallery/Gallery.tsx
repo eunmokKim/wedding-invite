@@ -8,16 +8,23 @@ import img4 from "/gallery/ws04.jpg";
 import img5 from "/gallery/ws05.jpg";
 import img6 from "/gallery/ws06.jpg";
 import img7 from "/gallery/ws07.jpg";
-import img8 from "/gallery/ws08.jpg";
 import img9 from "/gallery/ws09.jpg";
 import img10 from "/gallery/ws10.jpg";
 import img11 from "/gallery/ws11.jpg";
 import img12 from "/gallery/ws12.jpg";
+import img13 from "/gallery/ws13.jpg";
+import img14 from "/gallery/ws14.jpg";
+import img15 from "/gallery/ws15.jpg";
+import img16 from "/gallery/ws16.jpg";
 import FadeIn from "../FadeIn";
 import { createPortal } from "react-dom";
 import { useSwipeable } from "react-swipeable";
 
-const images = [img2, img3, img1, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+const images = [img4, img15, img13, 
+  img11, img2, img3, 
+  img5, img9, img1, 
+  img6, img16, img14, 
+  img7, img10, img12];
 
 export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
