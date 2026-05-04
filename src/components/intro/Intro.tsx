@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import bgm from "../../assets/music/bgm.mp3";
+import bgm from "../../assets/music/popcorn_from_38s.mp3";
 import { Pause, Play } from "lucide-react";
 
 export default function Intro() {
